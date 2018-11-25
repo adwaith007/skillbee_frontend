@@ -30,3 +30,28 @@
     transform: rotate(360deg);
   }
 }
+
+.loaderClass{
+  width:100%;
+  padding-top: 30vh;
+}
+
+.searchAlumni{
+  margin-top: 5vh;
+}
+
+.personHover{
+  padding-top: 1em !important;
+}
+
+.personHover:hover{
+  background-color: #282c34;
+}
+
+.container{
+  padding: 0.5em !important;
+}
+
+body{
+  background: #ffeb3b;
+}
