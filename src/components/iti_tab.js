@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Loader from './loader';
+import constants from '../constants';
 
 
 class ItiTab extends React.Component{
@@ -32,7 +33,7 @@ class ItiTab extends React.Component{
                     <div className="col s12 m6 l4 ">
                         <div className="card col-content">
                                 <div className="card-image waves-effect waves-block waves-light">
-                                    <img className="activator" width="250px" height="250px" src={iti.image}/>
+                                    <img className="activator" width="250px" height="250px" src={constants.baseURL+iti.image}/>
                                 </div>
                                 <div className="card-content  blue darken-3 center">
                                     <div className="card-title activator white-text text-darken-4"><span className="center">{iti.name}</span><i className="material-icons right">arrow_drop_down</i></div>

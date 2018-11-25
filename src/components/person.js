@@ -1,5 +1,6 @@
 import React from 'react';
 import {Col, Row,MediaBox} from 'react-materialize';
+import constants from '../constants';
 
 class Person extends React.Component{
     render(){
@@ -8,7 +9,7 @@ class Person extends React.Component{
                 <div className="container">
                     <Row >
                     <Col l={6} s={12} className="center">
-                        <img  src={"http://localhost:8000"+this.props.person.picture} width="100px" height="100px" className=" circle" />
+                        <img  src={constants.baseURL+this.props.person.picture} width="100px" height="100px" className=" circle" />
                     </Col>
                     <Col l={6} s={12} className="center">
                         <h5 className="header white-text">{this.props.person.name}</h5>
